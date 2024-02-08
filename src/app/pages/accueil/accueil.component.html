@@ -1,0 +1,17 @@
+@if (age >= 18) {
+
+<ul>
+  @for (produit of listeArticle; track $index) {
+
+    @if (produit.promo) {
+
+        <li>
+            {{ produit.nom }} 
+            <i>{{ produit.prix }}€</i>
+        </li>
+
+    }
+  }
+</ul>
+
+}
